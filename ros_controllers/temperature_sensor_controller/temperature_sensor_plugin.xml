@@ -1,0 +1,7 @@
+<library path="lib/libtemperature_sensor_controller">
+  <class name="temperature_sensor_controller/TemperatureSensorController" type="temperature_sensor_controller::TemperatureSensorController" base_class_type="controller_interface::ControllerBase">
+  <description>
+    The temperature sensor controller provides the temperature of the actuators of the robot
+  </description>
+  </class>
+</library>

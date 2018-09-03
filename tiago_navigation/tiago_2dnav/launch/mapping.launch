@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="mapping" default="karto"/>
+  <arg name="localization" default=""/>
+  <arg name="map"          default=""/>
+
+  <env name="PAL_HOST" value="tiago" />
+
+  <!-- SLAM -->
+  <include file="$(find tiago_2dnav)/launch/mapping_$(arg mapping).launch"/>
+
+
+</launch>

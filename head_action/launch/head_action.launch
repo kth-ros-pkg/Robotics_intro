@@ -1,0 +1,18 @@
+<launch>
+
+  <!-- Example file to launch this node with REEM & REEM-C --> 
+  <group ns="head_controller">
+    <node name="point_head_action" 
+          pkg="head_action" type="head_action" output="screen" >
+
+    <!-- Necessary params --> 
+      <rosparam>
+        success_angle_threshold: 0.01
+        pan_link: head_1_link
+        default_pointing_frame: stereo_optical_frame
+      </rosparam>
+    
+    </node>
+  </group>
+
+</launch>

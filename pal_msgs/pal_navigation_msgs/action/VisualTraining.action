@@ -1,0 +1,10 @@
+#goal definition
+uint8 ACTION_TRAIN=0
+uint8 action
+
+# Output directory, for ACTION_TRAIN
+string database_path
+---
+#result definition
+---
+#feedback

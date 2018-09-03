@@ -1,0 +1,38 @@
+#Binary sensor mask o select sensors used to check safety_zone
+byte NO_SENSORS = 0
+byte ALL_SENSORS = 127 
+#sonar sensors
+byte FRONT_SONARS = 1
+byte LEFT_SONARS = 2
+byte RIGHT_SONARS = 4
+byte BACK_SONARS = 8
+byte TORSO_SONARS = 16
+byte ONLY_SONARS = 31
+#lasers
+byte BASE_LASER = 32
+byte TORSO_LASER = 64
+byte ONLY_LASERS = 96
+
+# Request Safety Zone
+
+# Distance to take into account for obstacle detection
+float64 distance
+
+# Angles that specify the zone to check for safety
+float64 leftAngleRad
+float64 rightAngleRad
+
+uint32 sensorMask
+
+---
+
+#True if the specified side is safe, false otherwise. 
+#It returns the min distance and at which angle has been measured for each side.
+
+bool leftSafe
+float64 leftMinDist
+float64 leftMinDistAngleRad
+
+bool rightSafe 
+float64 rightMinDist
+float64 rightMinDistAngleRad

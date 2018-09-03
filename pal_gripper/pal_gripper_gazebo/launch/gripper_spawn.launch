@@ -1,0 +1,18 @@
+<launch>
+  <arg name="gzpose" default="-x 0 -y 0 -z 0.1 -R 0.0 -P 0.0 -Y 0.0"/>
+
+  <!-- PID gains -->
+  <rosparam command="load" file="$(find pal_gripper_controller_configuration)/config/pids.yaml"/>
+
+  <!-- Joint trajectory and diff drive controllers -->
+  <rosparam command="load" file="$(find pal_gripper_controller_configuration)/config/joint_trajectory_controllers.yaml"/>
+
+  <!-- Robot model -->
+  <include file="$(find pal_gripper_description)/robots/upload_gripper.launch">
+  </include>
+
+  <!-- Spawn robot in Gazebo -->
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_model"
+    args="-urdf -param robot_description $(arg gzpose) -model gripper" />
+
+</launch>

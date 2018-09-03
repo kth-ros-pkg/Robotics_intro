@@ -1,0 +1,8 @@
+# pose: desired robot pose (referenced to base_link)
+# Note: maximun distance allowed with this service call is 1 meter. Use only for final approach
+geometry_msgs/Pose pose
+
+---
+#Returns true if final pose was achieved 
+std_msgs/Bool done
+

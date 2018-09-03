@@ -1,0 +1,5 @@
+# Request number of submaps when datas are loaded 
+
+---
+int8 node
+int8 totPOI

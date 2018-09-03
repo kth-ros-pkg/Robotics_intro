@@ -1,0 +1,48 @@
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Changelog for package pal_parallel_gripper_wrapper
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.0.0 (2018-07-30)
+------------------
+
+0.0.13 (2018-04-13)
+-------------------
+
+0.0.12 (2018-02-20)
+-------------------
+
+0.0.11 (2018-01-24)
+-------------------
+
+0.0.10 (2018-01-24)
+-------------------
+* move scripts and config files from tiago_robot
+* Contributors: Jordi Pages
+
+0.0.9 (2016-10-14)
+------------------
+* fix maintainer
+* 0.0.8
+* Update changelog
+* 0.0.7
+* Update changelogs
+* Merge branch 'master' of gitlab:robots/pal_gripper
+* Added a service to grasp, so, to close the gripper up to a point where its not forcing excesively the motors so they don't warm up so much
+* 0.0.6
+* Update cahngelog
+* 0.0.5
+* Update changelog
+* 0.0.4
+* Update changelgo
+* 0.0.3
+* Update changelogs
+* Fixed package.xml
+* Add changelog
+* Fixed open value
+* Add install rules and a couple of testing scripts
+* Tested version
+* initial version of fake parallel gripper controller
+* Contributors: Jordi Pages, Sam Pfeiffer, Victor Lopez
+
+0.0.1 (2016-06-01)
+------------------

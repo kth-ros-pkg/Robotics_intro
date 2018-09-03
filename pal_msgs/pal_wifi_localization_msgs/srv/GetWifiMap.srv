@@ -1,0 +1,3 @@
+# Get the map as a wifi_map
+---
+pal_wifi_localization_msgs/WifiSignalMap map

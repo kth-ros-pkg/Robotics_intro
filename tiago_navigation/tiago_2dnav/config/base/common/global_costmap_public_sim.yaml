@@ -1,0 +1,77 @@
+# Independent settings for the planner's costmap
+global_costmap:
+  map_type: costmap
+
+  global_frame    : map
+  robot_base_frame: base_footprint
+
+  update_frequency : 1.0
+  publish_frequency: 1.0
+
+  transform_tolerance: 0.2
+
+  resolution: 0.05
+
+  track_unknown_space: true
+  unknown_cost_value : 255
+
+  robot_radius: 0.25
+
+  plugins:
+    - name: static_layer
+      type: 'costmap_2d::StaticLayer'
+    - name: obstacle_laser_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: obstacle_rgbd_layer
+      type: 'costmap_2d::ObstacleLayer'
+    - name: inflation_layer
+      type: 'costmap_2d::InflationLayer'
+
+  static_layer:
+    enabled  : true
+    map_topic: vo_map
+
+  obstacle_laser_layer:
+    enabled: true
+    observation_sources: base_scan
+    combination_method: 1 # @todo only with 1 works on the robot: otherwise the map walls are cleared
+
+    base_scan:
+      sensor_frame: base_laser_link
+      data_type: LaserScan
+      topic: scan
+      expected_update_rate: 0.3
+      observation_persistence: 1.0
+      inf_is_valid: true
+      marking: true
+      clearing: true
+      raytrace_range: 5.5
+      obstacle_range: 5.0
+      min_obstacle_height: -0.1
+      max_obstacle_height: 0.2
+
+  obstacle_rgbd_layer:
+    enabled: true
+    observation_sources: rgbd_scan
+    combination_method: 1
+
+    rgbd_scan:
+      sensor_frame: base_footprint
+      data_type: LaserScan
+      topic: rgbd_scan
+      expected_update_rate: 0.5
+      observation_persistence: 0.0
+      inf_is_valid: true
+      marking: true
+      clearing: true
+      raytrace_range: 3.5
+      obstacle_range: 3.2
+      blanking_range: 0.5
+      min_obstacle_height: -0.1
+      max_obstacle_height: 0.2
+      debug: true
+
+  inflation_layer:
+    enabled            : true
+    inflation_radius   : 0.45
+    cost_scaling_factor: 2.0

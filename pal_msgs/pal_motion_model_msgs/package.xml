@@ -1,0 +1,22 @@
+<package>
+  <name>pal_motion_model_msgs</name>
+  <version>0.11.3</version>
+  <description>
+    This package contains messages and services for motion models.</description>
+  <maintainer email="luca.marchionni@pal-robotics.com">Luca Marchionni</maintainer>
+  <maintainer email="paul.mathieu@pal-robotics.com">Paul Mathieu</maintainer>
+  <license>BSD</license>
+  <author email="luca.marchionni@pal-robotics.com">Luca Marchionni</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+
+</package>

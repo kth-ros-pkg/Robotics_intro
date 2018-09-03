@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_navigation_sm</name>
+  <version>0.1.7</version>
+  <description>
+    Dummy public version of PAL Navigation State Machine. It allows saving a map and loading that map for navigation purposes.
+    The complete version allows changing form localization to
+    mapping (and viceversa), provides the pose saver and the map manager
+    service to save and change the current map.
+  </description>
+
+  <maintainer email="tiago-support@pal-robotics.com">TIAGo support team</maintainer>
+  <author email="jeremie.deray@pal-robotics.com">Jeremie Deray</author>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+  <author email="siegfried.gevatter@pal-robotics.com">Siegfried-A. Gevatter Pujals</author>
+  <author email="ricardo.tellez@pal-robotics.com">Ricardo Tellez</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>rosnode</run_depend>
+  <run_depend>rosparam</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>map_server</run_depend>
+  <run_depend>pal_navigation_msgs</run_depend>
+  <run_depend>pal_python</run_depend>
+</package>

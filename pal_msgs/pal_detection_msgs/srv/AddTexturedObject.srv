@@ -1,0 +1,14 @@
+# This service message allows storing in the robot computer where 
+# the texture_detector node is running the image of a new textured object
+#
+sensor_msgs/Image img     # image of the new textured object
+string fullPathFileName   # full path and filename, without extension, where the image
+                          # will be stored. The file image format will be PNG. 
+                          # This parameter must be a valid full path in the computer where
+                          # the texture_detector node is running. For instace,
+                          # calling this service with fullPathFileName set to "/home/pal/new_object"
+                          # will make the texture_detector node create the file /home/pal/new_object.png
+---
+bool result               # The result will be true if the texture_detector node has been
+                          # able to store the image in the specified path and filename
+

@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="pal_parallel_gripper_wrapper" name="parallel_gripper" type="parallel_gripper_fake.py" output="screen">
+        <rosparam command="load" file="$(find pal_parallel_gripper_wrapper)/config/parallel_gripper.yaml" />
+    </node> 
+</launch>

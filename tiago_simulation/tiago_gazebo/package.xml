@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>tiago_gazebo</name>
+  <version>0.0.10</version>
+  <description>The tiago_gazebo package</description>
+  <maintainer email="jordi.pages@pal-robotics.com">Jordi Pages</maintainer>
+  <license>BSD</license>
+  <author email="bence.magyar@pal-robotics.com">Bence Magyar</author>
+  <author email="sam.pfeiffer@pal-robotics.com">Sammy Pfeiffer</author>
+  <author email="jordi.pages@pal-robotics.com">Jordi Pages</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>gazebo_plugins</run_depend>
+  <run_depend>pal_gazebo_plugins</run_depend>
+  <run_depend>pal_hardware_gazebo</run_depend>
+  <run_depend>tiago_bringup</run_depend>
+  <run_depend>tiago_controller_configuration_gazebo</run_depend>
+  <run_depend>tiago_description</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>play_motion_msgs</run_depend>
+
+  <export>
+    <!-- gazebo_ros_paths_plugin automatically adds these to
+        GAZEBO_PLUGIN_PATH and GAZEBO_MODEL_PATH when you do this export inside
+        the package.xml file. You can than use URIs of type model://my_package/stuff. -->
+    <gazebo_ros                                                                 
+        gazebo_model_path="${prefix}/.." /> 
+    </export>
+
+</package>

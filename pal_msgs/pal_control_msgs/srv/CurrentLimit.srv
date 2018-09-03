@@ -1,0 +1,10 @@
+#This service requests to change the current limit of a motor 
+# to a new value. 
+# Admissible values are between 0 (zero current)  and 1 (nominal current).
+
+string    actuator_name
+float64   current_limit
+
+---
+
+string   status

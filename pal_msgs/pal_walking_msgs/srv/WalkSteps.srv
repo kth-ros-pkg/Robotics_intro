@@ -1,0 +1,7 @@
+# This service requests that the robot walks
+# The parameters specify how many steps to perform and the length of every step
+
+int32     nsteps
+float64   step_length
+float64   step_time
+---

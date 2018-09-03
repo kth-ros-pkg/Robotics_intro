@@ -1,0 +1,11 @@
+# This service message allows specifying to the texture_detector node
+# which object it must look for.
+#
+
+string imageFullPathFileName # image filename including full path and file extension (always .png)
+                             # The file must exist in the computer where the texture_detector node
+                             # is running. The image must contain a frontal view of a planar textured object.
+float64 width                # width of the planar object in meters. Set to 0 if no pose estimation is required.
+float64 height               # height of the planar object in meters. Set to 0 if no pose estimation is required.
+---
+bool result                  # returns true if the texture_detector node has been able to load the given image filename

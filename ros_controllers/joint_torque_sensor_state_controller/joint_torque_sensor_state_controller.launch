@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <!-- Configure joint_torque_sensor_state controller -->
+  <rosparam command="load"
+    file="$(find joint_torque_sensor_state_controller)/joint_torque_sensor_state_controller.yaml" />
+
+  <!-- Spawn controller -->
+  <node name="introspection_spawner"
+        pkg="controller_manager" type="spawner" output="screen"
+        args="joint_torque_sensor_state_controller" />
+
+</launch>
+
+

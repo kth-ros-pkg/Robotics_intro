@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_hardware_interfaces</name>
+  <version>0.0.3</version>
+  <description>The pal_hardware_interfaces package</description>
+
+  <maintainer email="hilario.tome@pal-robotics.com">Hilario Tome</maintainer>
+
+  <license>Proprietary</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>hardware_interface</build_depend>
+
+  <run_depend>hardware_interface</run_depend>
+
+  <export>
+  </export>
+
+</package>

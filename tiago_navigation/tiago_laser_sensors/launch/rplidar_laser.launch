@@ -1,0 +1,6 @@
+<launch>
+  <node name="rplidar" pkg="rplidar_ros" type="rplidarNode">
+    <rosparam file="$(find tiago_laser_sensors)/config/rplidar_laser.yaml" command="load"/>
+    <remap from="scan" to="scan"/>
+  </node>
+</launch>

@@ -1,0 +1,7 @@
+<library path="lib/libmode_state_controller">
+  <class name="mode_state_controller/ModeStateController" type="mode_state_controller::ModeStateController" base_class_type="controller_interface::ControllerBase">
+  <description>
+    The mode state  controller provides the state of the actuators of the robot
+  </description>
+  </class>
+</library>

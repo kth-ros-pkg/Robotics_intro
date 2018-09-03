@@ -1,0 +1,10 @@
+# Uncomment the 'hostname' to use ethernet instead of USB
+# hostname: laserFront
+frame_id: /base_laser_link
+
+intensity: false
+
+min_ang: !degrees -90
+max_ang: !degrees  90
+
+range_max: 10.0

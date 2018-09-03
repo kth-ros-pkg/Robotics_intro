@@ -1,0 +1,33 @@
+<package>
+  <name>rviz_plugin_covariance</name>
+  <description>
+    Plugin providing covariance display.
+    Supports both geometry_msgs/PoseWithCovarianceStamped and nav_msgs/Odometry messages.
+  </description>
+  <version>0.0.6</version>
+  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <author>Thomas Moulard</author>
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>rviz</build_depend>
+  <build_depend>cmake_modules</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>libogre-dev</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>rviz</run_depend>
+  <run_depend>cmake_modules</run_depend>
+  <run_depend>eigen</run_depend>
+  <run_depend>libogre-dev</run_depend>
+
+  <export>
+     <rviz plugin="${prefix}/plugin_description.xml"/>
+  </export>
+</package>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_python</name>
+  <version>0.9.14</version>
+  <description>PAL python utils.</description>
+
+  <maintainer email="victor.lopez@pal-robotics.com">Victor Lopez Boya</maintainer>
+  <author email="siegfried.gevatter@pal-robotics.com">Siegfried-A. Gevatter Pujals</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>rospy</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>rosgraph</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>actionlib_msgs</run_depend>
+  <run_depend>pal_interaction_msgs</run_depend>
+  <run_depend>pal_device_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>cv_bridge</run_depend>
+</package>

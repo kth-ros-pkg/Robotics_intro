@@ -1,0 +1,11 @@
+## Service message to make the robot look towards a direction defined by a pixel of its left camera
+## The service is implemented in personServer at /personServer/lookToPixel
+##
+## The parameters of the service are the pixel coordinates (x,y) expressed relative to the image width and height. 
+## For instance, if the service is called with (x,y) = (1, 0) then the robot will look the right side; if (x,y) = (0.5, 0.5) the robot
+## will look forward; if (0.5, 1) the robot will look downwards; etc.
+
+float32 x
+float32 y
+---
+

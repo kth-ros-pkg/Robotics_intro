@@ -1,0 +1,23 @@
+## .................
+## DEPRECATED
+## Please do not use this action as will be removed in the future.
+## i18ntext.action together with pal_tts_cfg pkg is recomended instead.
+## ---------------------------------------------------------------------
+ 
+## goal definition
+# Text to be spoken
+string text
+# Language of the given text in
+# variable text.
+# If empty the system will try to speak it in 
+# the current system language that can be changed
+# in wReemCommmander.
+string lang_id
+# Time to wait before starting to say the 
+# given text. Default is zero.
+duration wait_before_speaking
+---
+## result definition
+string text
+---
+## feedback

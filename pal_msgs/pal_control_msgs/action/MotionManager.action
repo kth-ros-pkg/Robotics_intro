@@ -1,0 +1,26 @@
+# Path to XML file containing motions for the robot
+string filename
+
+# True if a collision-free approach motion and trajectory validation are to be performed.
+# If set to true but an approach motion is not required, it will not be computed.
+bool plan
+
+#True if safety around the robot must be checked using sensors such as the sonars and lasers
+bool checkSafety
+
+#True if the motion must be repeated until a new goal has been received
+bool repeat
+
+#priority of the motion, 0 is no priority, 100 is max priority
+uint8 priority
+
+#Specifies how long in miliseconds should the goal wait before forcing an execution. If a movement is being executed when the goal is received, it will wait the specified time or until the movement finishes to execute it.
+# -1 Means wait forever until the previous movement has finished
+int32 queueTimeout 
+
+---
+#Message in result, can contain information if goal failed
+string message
+---
+# feedback message
+# no feedback for the moment. could be progress, or final position

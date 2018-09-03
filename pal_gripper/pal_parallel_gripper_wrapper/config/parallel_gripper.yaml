@@ -1,0 +1,11 @@
+# The name of the controller, everything will be subnamed like parallel_gripper_controller/command
+controller_name: parallel_gripper
+# Rate at which to publish the state of the controller
+pub_rate: 50
+# Real controller name where the goals will be sent, will be extended to gripper_controller
+real_controller_name: gripper
+# Real joints that will be commanded (with the same goal for each being parallel_gripper goal / 2.0)
+real_joint_names: ['gripper_left_finger_joint', 'gripper_right_finger_joint']
+# Joint name for the parallel_gripper joint
+gripper_joint_name: 'parallel_gripper_joint'
+

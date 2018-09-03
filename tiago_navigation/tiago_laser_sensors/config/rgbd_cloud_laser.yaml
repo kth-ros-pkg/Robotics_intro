@@ -1,0 +1,18 @@
+min_height: 0.03
+max_height: 1.8
+
+angle_min      : !degrees -25.0
+angle_max      : !degrees  25.0
+angle_increment: !degrees   1.0
+
+scan_time: 0.166 # 6Hz (0.033 -> 30Hz)
+
+# Range [min, max] greater than the actual sensor
+# e.g. Xtion Pro Live is [0.8, 3.5]m
+range_min:  0.45  # m
+range_max: 10.0   # m
+
+target_frame: base_footprint
+
+use_concurrency: true
+use_inf        : true

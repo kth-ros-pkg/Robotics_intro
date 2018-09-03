@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>tiago_navigation</name>
+  <version>0.9.8</version>
+  <description>TiaGo navigation metapackage</description>
+  <maintainer email="jeremie.deray@pal-robotics.com">Jeremie Deray</maintainer>
+  <license>BSD</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>tiago_2dnav</run_depend>
+  <run_depend>tiago_maps</run_depend>
+  <run_depend>tiago_laser_sensors</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

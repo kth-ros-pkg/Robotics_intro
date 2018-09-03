@@ -1,0 +1,21 @@
+<launch>
+  <arg name="camera"  value="base_rgbd_camera"/>
+  <arg name="manager" value="$(arg camera)_nodelet_manager"/>
+  <arg name="respawn" default="false"/>
+  <arg     if="$(arg respawn)" name="bond" value=""/>
+  <arg unless="$(arg respawn)" name="bond" value="--no-bond"/>
+
+  <arg name="cloud" default="depth/points"/>
+  <arg name="scan"  default="/rgbd_scan"/>
+
+  <group ns="$(arg camera)">
+    <node pkg="nodelet" type="nodelet" name="pointcloud_to_laserscan"
+          args="load pointcloud_to_laserscan/PointCloudToLaserScanNodelet $(arg manager) $(arg bond)"
+          respawn="$(arg respawn)">
+      <remap from="cloud_in" to="$(arg cloud)"/>
+      <remap from="scan"     to="$(arg scan)"/>
+
+      <rosparam file="$(find tiago_laser_sensors)/config/rgbd_cloud_laser.yaml" command="load"/>
+    </node>
+  </group>
+</launch>

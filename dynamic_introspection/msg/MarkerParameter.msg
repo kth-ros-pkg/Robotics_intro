@@ -1,0 +1,2 @@
+string name
+visualization_msgs/MarkerArray value

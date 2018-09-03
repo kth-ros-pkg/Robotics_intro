@@ -1,0 +1,3 @@
+# Get the motion map 
+---
+pal_motion_model_msgs/MotionModelMap map

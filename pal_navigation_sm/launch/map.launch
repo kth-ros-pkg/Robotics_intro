@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="map"        default=""/>
+  <arg name="symlink"    default=""/>
+  <arg name="multiple" default="false"/>
+  <arg name="tf_prefix" default=""/>
+
+  <arg name="octomap"    default="false"/>
+
+  <!-- Setup map -->
+  <node name="map_setup" pkg="pal_navigation_sm" type="map_setup.py">
+    <param name="map" value="$(arg map)"/>
+  </node>
+
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map)/map.yaml"/>
+
+</launch>

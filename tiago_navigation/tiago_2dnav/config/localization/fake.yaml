@@ -1,0 +1,10 @@
+# Offset between the origin of the simulator coordinate frame
+# and the map coordinate frame:
+delta_x  : 0.0
+delta_y  : 0.0
+delta_yaw: 0.0
+
+# Frames:
+base_frame_id  : base_footprint
+odom_frame_id  : odom
+global_frame_id: map

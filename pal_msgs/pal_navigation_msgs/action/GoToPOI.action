@@ -1,0 +1,4 @@
+std_msgs/String poi
+---
+---
+geometry_msgs/PoseStamped base_position

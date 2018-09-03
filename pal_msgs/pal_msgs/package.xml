@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_msgs</name>
+  <version>0.11.3</version>
+  <description>PAL-specific messages and services</description>
+  <maintainer email="adolfo.rodriguez@pal-robotics.com">Adolfo Rodriguez Tsouroukdissian</maintainer>
+  <maintainer email="paul.mathieu@pal-robotics.com">Paul Mathieu</maintainer>
+  <license>BSD</license>
+  <author email="adolfo.rodriguez@pal-robotics.com">Adolfo Rodriguez Tsouroukdissian</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>pal_behaviour_msgs</run_depend>
+  <run_depend>pal_control_msgs</run_depend>
+  <run_depend>pal_detection_msgs</run_depend>
+  <run_depend>pal_device_msgs</run_depend>
+  <run_depend>pal_interaction_msgs</run_depend>
+  <run_depend>pal_motion_model_msgs</run_depend>
+  <run_depend>pal_multirobot_msgs</run_depend>
+  <run_depend>pal_navigation_msgs</run_depend>
+  <run_depend>pal_tablet_msgs</run_depend>
+  <run_depend>pal_vision_msgs</run_depend>
+  <run_depend>pal_walking_msgs</run_depend>
+  <run_depend>pal_wifi_localization_msgs</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

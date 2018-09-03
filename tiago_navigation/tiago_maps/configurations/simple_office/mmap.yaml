@@ -1,0 +1,7 @@
+poi:
+  submap_0:
+    poi_1: [submap_0, room1, 1.0, 0.0, 0.0]
+    poi_2: [submap_0, door, 1.5, 4.2, 1.647]
+    poi_3: [submap_0, room2, -0.539, 7.488, 0.036]
+visualLoc:
+  submap_0: {databaseName: 'databases/tree'}

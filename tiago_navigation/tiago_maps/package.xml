@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<package>
+  <name>tiago_maps</name>
+  <version>0.9.8</version>
+  <description>TiaGo-specific maps and launch files.</description>
+  <maintainer email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</maintainer>
+  <license>Modified BSD</license>
+  <author email="enrique.fernandez@pal-robotics.com">Enrique Fernandez</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>

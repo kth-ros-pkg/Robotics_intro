@@ -1,0 +1,5 @@
+<launch>
+  <arg name="laser" default="sick_tim561"/>
+
+  <include file="$(find tiago_laser_sensors)/launch/$(arg laser)_laser.launch"/>
+</launch>

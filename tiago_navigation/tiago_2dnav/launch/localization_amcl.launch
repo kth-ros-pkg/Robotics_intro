@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="scan" default="scan"/>
+  <arg name="multiple" default="false"/>
+  <arg name="tf_prefix" default=""/>
+
+  <arg name="amcl_with_mapping" default="false"/>
+
+  <node pkg="amcl" type="amcl" name="amcl" output="screen">
+    <remap from="scan" to="$(arg scan)"/>
+
+    <!-- Load the last saved pose estimate (initial pose) -->
+    <rosparam if="$(arg multiple)" file="$(find robotics_project)/pal/$(arg tf_prefix)_pose.yaml" command="load"/>
+    <rosparam unless="$(arg multiple)" file="$(find robotics_project)/pal/pose.yaml" command="load"/>
+
+    <rosparam file="$(find tiago_2dnav)/config/localization/amcl.yaml" command="load"/>
+    <param name="use_map_topic" value="$(arg amcl_with_mapping)"/>
+    <param name="first_map_only" value="true"/>
+    <param if="$(arg multiple)" name="odom_frame_id" value="$(arg tf_prefix)/odom"/>
+    <param if="$(arg multiple)" name="base_frame_id" value="$(arg tf_prefix)/base_footprint"/>
+    <param if="$(arg multiple)" name="global_frame_id" value="$(arg tf_prefix)/map"/>
+  </node>
+</launch>

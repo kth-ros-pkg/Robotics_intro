@@ -1,0 +1,5 @@
+## Action for changing the current building and/or the current floor
+string building_name # should correspond to a building description file in ~/.pal/maps/buildings
+string floor_name # should correspond to a floor name within the building description file
+---
+bool success

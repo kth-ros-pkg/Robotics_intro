@@ -1,0 +1,6 @@
+# This action disables a functionality for a set amount of seconds.
+# A negative or zero value will disable it until the goal is canceled
+
+float32 duration # [s] for how long to disable the functionality
+---
+---

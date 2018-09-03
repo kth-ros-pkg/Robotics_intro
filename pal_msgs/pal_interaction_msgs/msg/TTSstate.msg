@@ -1,0 +1,2 @@
+bool isSpeaking
+string text

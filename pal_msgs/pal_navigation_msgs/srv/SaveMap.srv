@@ -1,0 +1,8 @@
+## Action for saving the current map (while in mapping mode).
+
+string directory  # output directory, optional
+---
+bool success
+string name
+string full_path
+string message  # error or other informative message

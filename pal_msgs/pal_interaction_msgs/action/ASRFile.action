@@ -1,0 +1,21 @@
+##goal definition
+# absolute path to the file to be recognised.
+# format has to be PCM 16 bits signed integer
+string file
+# language id. (i.e., en_US, es_ES, ...)
+string lang_id
+# grammar name
+string grammar
+---------------------------
+##result definition
+# same path as specified in goal variable file
+string file
+# error/warning messages 
+string msg
+# vector of results
+asrresult[] recognised_utterances
+---------------------------
+#feedback definition
+# At the inmediate time an utterance is recognised
+# it is published here.
+asrresult recognised_utterance

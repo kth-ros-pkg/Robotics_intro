@@ -1,0 +1,21 @@
+<launch>
+  <arg name="camera"  value="base_rgbd_camera"/>
+  <arg name="manager" value="$(arg camera)_nodelet_manager"/>
+  <arg name="respawn" default="false"/>
+  <arg     if="$(arg respawn)" name="bond" value=""/>
+  <arg unless="$(arg respawn)" name="bond" value="--no-bond"/>
+
+  <arg name="image" default="depth/image"/>
+  <arg name="scan"  default="/rgbd_scan"/>
+
+  <group ns="$(arg camera)">
+    <node pkg="nodelet" type="nodelet" name="depthimage_to_laserscan"
+          args="load depthimage_to_laserscan/DepthImageToLaserScanNodelet $(arg manager) $(arg bond)"
+          respawn="$(arg respawn)">
+      <remap from="image" to="$(arg image)"/>
+      <remap from="scan"  to="$(arg scan)"/>
+
+      <rosparam file="$(find tiago_laser_sensors)/config/rgbd_depth_laser.yaml" command="load"/>
+    </node>
+  </group>
+</launch>

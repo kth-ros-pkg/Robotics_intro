@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>pal_hardware_gazebo</name>
+  <version>0.1.1</version>
+  <description>The pal_hardware_gazebo package</description>
+
+  <maintainer email="hilario.tome@pal-robotics.com">Hilario Tome</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>angles</build_depend>
+  
+  <depend>roscpp</depend>
+  <depend>hardware_interface</depend>
+  <depend>joint_limits_interface</depend>
+  <depend>control_toolbox</depend>
+  <depend>gazebo_ros_control</depend>
+  <depend>gazebo</depend>
+  <depend>cmake_modules</depend>
+  <depend>eigen</depend>
+  <depend>dynamic_introspection</depend>
+  <depend>pal_hardware_interfaces</depend>
+  
+  <export>
+    <gazebo_ros_control plugin="${prefix}/pal_hardware_gazebo_plugins.xml"/>
+  </export>
+  
+</package>

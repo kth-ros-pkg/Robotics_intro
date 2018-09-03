@@ -1,0 +1,10 @@
+#goal definition
+---
+#result definition
+bool success                                               # return true if get successful recognition
+float64 confidence                                         # recognition confidence
+geometry_msgs/PoseWithCovarianceStamped estimatedPose      # estimated pose (use this only when success == true)
+---
+#feedback
+
+

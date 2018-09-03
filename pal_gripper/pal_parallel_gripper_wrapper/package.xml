@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_parallel_gripper_wrapper</name>
+  <version>1.0.0</version>
+  <description>The pal_parallel_gripper_wrapper package</description>
+
+  <maintainer email="sam.pfeiffer@pal-robotics.com">Sam Pfeiffer</maintainer>
+  <maintainer email="tiago-support@pal-robotics.com">TIAGo support team</maintainer>
+
+
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>control_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>trajectory_msgs</build_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>control_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>trajectory_msgs</run_depend>
+  <run_depend>ddynamic_reconfigure_python</run_depend>
+
+</package>

@@ -1,0 +1,11 @@
+<library path="lib/libpal_hardware_gazebo">
+
+  <class
+    name="pal_hardware_gazebo/PalHardwareGazebo"
+    type="gazebo_ros_control::PalHardwareGazebo"
+    base_class_type="gazebo_ros_control::RobotHWSim">
+    <description>
+      PAL generic robot simulation interface.
+    </description>
+  </class>
+</library>

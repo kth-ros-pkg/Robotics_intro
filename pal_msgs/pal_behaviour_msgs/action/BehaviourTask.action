@@ -1,0 +1,10 @@
+# Example usage in axclient:
+#   taskName: 'presentation'
+#   arguments: [{key: 'path', 
+#   value: 'interaction/touchscreen/presentations/autoPresentation.presentation'}]
+#
+string taskName
+pal_behaviour_msgs/BehaviourArgument[] arguments
+---
+---
+

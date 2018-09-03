@@ -1,0 +1,8 @@
+# Request POI (Point of Interest) 
+
+---
+
+#Returns the poi in the field points of the cloud
+#Points are in coordinates (x,y,theta)
+pal_navigation_msgs/POI   poi
+

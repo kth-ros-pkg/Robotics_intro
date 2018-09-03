@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>pal_video_recording_msgs</name>
+  <version>0.11.3</version>
+  <description>
+    This package defines messages used by the PAL video recording package.</description>
+  <maintainer email="jordi.pages@pal-robotics.com">Jordi Pages</maintainer>
+  <license>BSD</license>
+  <author email="jordi.pages@pal-robotics.com">Jordi Pages</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+
+</package>

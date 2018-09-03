@@ -1,0 +1,8 @@
+base_global_planner: global_planner/GlobalPlanner
+
+GlobalPlanner:
+  default_tolerance: 0.5
+
+  allow_unknown: false
+
+  visualize_potential: true

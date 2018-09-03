@@ -1,0 +1,78 @@
+## goal definition
+
+# utterance will contain indications to construct
+# the text to be spoken.
+# It must be specified in a section/key format 
+# for internationalisation. The actual text will
+# be obtained from configuration files as in pal_tts_cfg pkg.
+ 
+I18nText text
+TtsText rawtext
+
+# This is to suggest a voice name to the 
+# tts engine. For the same language we might have
+# a variety of voices available, and this variable 
+# is to choose one among them. 
+# (not implemented yet)
+string speakerName
+
+# Time to wait before synthesising the text itself.
+# It can be used to produced delayed speech.
+float64 wait_before_speaking
+
+---
+## result definition
+
+# Variable text will contain
+# the actual text to be spoken
+string text
+
+# Msg will contain a warning/error message
+# in case something happens during synthesis.
+
+string msg
+---
+## feedback
+
+# Everytime one of the following events occuring
+# during the synthesis process a feedback message
+# will be published.
+# Only TTS_EVENT_STARTED_PLAYING_WORD and 
+# TTS_EVENT_MARK are implemented now.
+
+uint16 TTS_EVENT_INITIALIZATION = 1
+uint16 TTS_EVENT_SHUTDOWN = 2
+uint16 TTS_EVENT_SYNCHRONIZATION = 4
+uint16 TTS_EVENT_FINISHED_PLAYING_UTTERANCE = 8
+uint16 TTS_EVENT_MARK = 16
+uint16 TTS_EVENT_STARTED_PLAYING_WORD = 32
+uint16 TTS_EVENT_FINISHED_PLAYING_PHRASE = 64
+uint16 TTS_EVENT_FINISHED_PLAYING_SENTENCE = 128
+
+# Store the event type and can be used
+# to filter messages depending on the type of 
+# events we are interested in
+
+uint16 event_type
+
+# Time since the begining of the synthesis
+# at which the event occured.
+
+time timestamp
+
+# Text said until now, 
+# it will contain the current word in case of WORD events
+
+string text_said
+
+# Next word to be pronounced
+# (not implemented)
+string next_word
+
+# Everytime a mark like this one
+# <mark name="markname"/> is present in the text
+# a MARK event will be generated with the 'name' 
+# argument value as mark id. Other fields
+# different from the mark_id are not implemented.
+
+TtsMark marks

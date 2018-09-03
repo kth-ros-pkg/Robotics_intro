@@ -1,0 +1,16 @@
+<library path="lib/libtestClassPlugins">
+
+  <class name="TestClassA" type="TestClassA" base_class_type="TestClassBase">
+    <description>
+      Class A
+    </description>
+  </class>
+  
+  <class name="TestClassB" type="TestClassB" base_class_type="TestClassBase">
+    <description>
+      Class A
+    </description>
+  </class>
+
+</library>
+
