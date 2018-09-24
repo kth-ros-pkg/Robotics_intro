@@ -15,6 +15,7 @@ find_package(catkin REQUIRED
   aruco_ros
   geometry_msgs
   moveit_msgs
+  moveit_commander
 )
 
 catkin_python_setup()
