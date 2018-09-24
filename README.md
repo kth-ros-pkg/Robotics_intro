@@ -10,8 +10,9 @@ Run the following commands in a terminal:
 ```
 $ cd ~/catkin_ws/src
 $ git clone "this_repo_link" "folder_name"
-$ cd ..
-$ rosdep install --from-paths src --ignore-src --rosdistro=$ROS_DISTRO
+$ cd 
+$ rosdep install --from-paths catkin_ws --ignore-src --rosdistro=$ROS_DISTRO
+$ cd ~/catkin_ws
 $ catkin_make -DCATKIN_ENABLE_TESTING=0
 $ source devel/setup.bash
 ```
