@@ -20,8 +20,10 @@
   <arg name="global_planner"  default="navfn"/>
   <arg name="local_planner"   default="eband"/>
   <arg name="planner"         default="base"/>
+  <!-- Robot pose in Gazebo for initial demo -->
+  <arg name="gzpose"         default="-x -0.3343 -y -0.0321 -z -0.0012 -R -0.005 -P 0.00322 -Y -0.8355"/>
   <!-- Robot pose in Gazebo for Tasks E and C -->
-  <arg name="gzpose"          default="-x -0.3343 -y -0.0321 -z -0.0012 -R -0.005 -P 0.00322 -Y -0.8355"/>
+  <!-- <arg name="gzpose"         default="-x -1.146 -y -6.145 -z -0.001 -R -0.002 -P 0.001 -Y -1.593"/> -->
   <!-- Robot pose in Gazebo for Task A -->
   <!-- <arg name="gzpose"     default="-x 2.40 -y -11.0 -z -0.003 -R 0.0 -P 0.0 -Y 70.0"/> -->
  
