@@ -14,7 +14,6 @@
   <rosparam command="load" file="$(find tiago_controller_configuration_gazebo)/config/tiago_$(arg robot)_pal_hardware_gazebo.yaml"/>
 
   <!-- Joint trajectory and diff drive controllers -->
-  <rosparam command="load" file="$(find tiago_controller_configuration_gazebo)/config/joint_trajectory_controllers.yaml"/>
   <rosparam command="load" file="$(find tiago_controller_configuration_gazebo)/config/mobile_base_controller.yaml"/>
 
   <!-- Spawn robot in Gazebo -->
@@ -22,3 +21,4 @@
     args="-urdf -param robot_description $(arg gzpose) -model $(arg model_name)" />
 
 </launch>
+

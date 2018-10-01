@@ -1131,16 +1131,6 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='aruco_cube_0'>
-        <pose frame=''>-1.13053 -6.65365 0.8625 0 0 -1e-06</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-1.13053 -6.65365 0.8625 0 0 -1e-06</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <model name='bookshelf_3'>
         <pose frame=''>1.77883 -12.8875 0 -1.8e-05 -0 3.13929</pose>
         <scale>1 1 1</scale>
@@ -1657,69 +1647,6 @@
         <gravity>1</gravity>
       </link>
       <pose frame=''>-1.05134 -6.32682 0 0 -0 0</pose>
-    </model>
-    <model name='aruco_cube_0'>
-      <static>0</static>
-      <link name='link'>
-        <inertial>
-          <mass>0.05</mass>
-          <inertia>
-            <ixx>5.2083e-05</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>5.2083e-05</iyy>
-            <iyz>0</iyz>
-            <izz>2.0833e-05</izz>
-          </inertia>
-        </inertial>
-        <collision name='colision'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.05 0.05 0.1</size>
-            </box>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>30</mu>
-                <mu2>30</mu2>
-                <fdir1>0 0 0</fdir1>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <contact>
-              <ode>
-                <kp>1e+06</kp>
-                <kd>100</kd>
-                <min_depth>0.0025</min_depth>
-                <max_vel>1</max_vel>
-              </ode>
-            </contact>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual1'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <uri>model://aruco_cube/meshes/aruco_cube_5cm.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-      <pose frame=''>-1.24871 -6.42441 0 0 -0 0</pose>
     </model>
     <model name='table_3'>
       <static>1</static>
