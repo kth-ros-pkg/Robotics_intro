@@ -15,25 +15,23 @@
 
   <env name="LC_NUMERIC" value="C" />
 
-  <!-- start up world -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find tiago_gazebo)/worlds/$(arg world).world"/>
-    <arg name="gui" value="$(arg gui)"/>
-    <arg name="debug" value="$(arg debug)"/>
-    <arg name="recording" value="$(arg recording)"/>
-  </include>
-
-  <!-- spawn robot in simulation -->
+  <!-- Spawn robot in simulation -->
   <include file="$(find tiago_gazebo)/launch/tiago_spawn.launch">
     <arg name="robot"  value="$(arg robot)"/>
     <arg name="gzpose" value="$(arg gzpose)"/>
   </include>
 
-  <!-- bring up robot -->
+  <!-- Bring up robot -->
   <include file="$(find tiago_gazebo)/launch/simulation_tiago_bringup.launch">
     <arg name="robot"       value="$(arg robot)"/>
     <arg name="public_sim"  value="$(arg public_sim)"/>
     <arg name="use_moveit_camera" value="$(arg use_moveit_camera)"/>
   </include>
+
+  <!-- Spawn/delete demo models in Gazebo -->
+  <node pkg="robotics_project" type="gazebo_models_hdl.py" name="gazebo_models_handler"
+    output="screen">
+    <param name="aruco_cube_sdf" value="$(find tiago_gazebo)/models/aruco_cube/aruco_cube.sdf"/>
+  </node>
 
 </launch>
