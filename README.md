@@ -19,6 +19,7 @@ $ source devel/setup.bash
 ## Run
 In order to run the system:
 ```
+$ roslaunch robotics_project gazebo_project.launch
 $ roslaunch robotics_project launch_project.launch
 ```
 You should be able to visualize the system in both Rviz and Gazebo and then you're ready to start to work.
@@ -30,4 +31,4 @@ This project is licensed under the Modified BSD License - see [LICENSE](https://
 
 ## Acknowledgments
 
-* Heavily based on packages from [PAL Robotics](http://www.pal-robotics.com/en/home/)
+* Based on packages from [PAL Robotics](http://www.pal-robotics.com/en/home/)
