@@ -14,7 +14,7 @@ from sensor_msgs.msg import JointState
 from actionlib import SimpleActionClient
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 from nav_msgs.msg import Odometry
-from IPython import embed
+# from IPython import embed
 
 from moveit_msgs.msg import MoveItErrorCodes
 moveit_error_dict = {}
