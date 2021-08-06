@@ -1,5 +1,7 @@
 # Robotics_intro
 
+** This repo isn't currently maintained. Find the latest version [here](https://github.com/ignaciotb/robi_final_project).**
+
 Packages for the final project of the course DD2410 "Introduction to Robotics".
 Project based on the PAL Robotics platform TIAGo.
 
